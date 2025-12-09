@@ -141,8 +141,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 CORS_ALLOWED_ORIGINS = [
-    "https://your-frontend.netlify.app",
-    "https://your-frontend.vercel.app",
+    "https://military-asset-management-system-beta.vercel.app",
 ] 
 
 
@@ -150,7 +149,9 @@ DEBUG = False   # Important for production
 
 ALLOWED_HOSTS = ['.onrender.com', 'localhost', '127.0.0.1']
 
-CSRF_TRUSTED_ORIGINS = ['https://*.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://*.onrender.com',
+                        'https://military-asset-management-system-beta.vercel.app',
+                        ]
 
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
