@@ -145,6 +145,13 @@ CORS_ALLOWED_ORIGINS = [
     "https://your-frontend.vercel.app",
 ] 
 
+
+DEBUG = False   # Important for production
+
+ALLOWED_HOSTS = ['.onrender.com', 'localhost', '127.0.0.1']
+
+CSRF_TRUSTED_ORIGINS = ['https://*.onrender.com']
+
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
