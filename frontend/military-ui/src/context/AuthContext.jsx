@@ -31,7 +31,7 @@ export function AuthProvider({ children }) {
       }
 
       try {
-        const decoded = jwtDecode(access);
+        const decoded = jwt_decode(access);
         const userId = decoded.user_id;
         const res = await api.get(`/users/${userId}/`);
         setUser(res.data);
