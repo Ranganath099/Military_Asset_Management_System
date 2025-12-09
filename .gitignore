@@ -1,0 +1,12 @@
+.env
+venv/                          
+__pycache__/                   
+*.pyc                          
+*.pyo
+*.pyd
+frontend/node_modules/
+node_modules/         
+frontend/.parcel-cache/
+frontend/dist/
+frontend/build/
+
